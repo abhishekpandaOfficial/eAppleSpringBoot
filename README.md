@@ -20,11 +20,12 @@
    ### Testcontainers workflow
    --------------------------
      • You can use Testcontainers with any testing library you are already familiar with. A typical Testcontainers-based integration test works as follows:
-     ![image](https://github.com/abhishekpandaOfficial/eAppleSpringBoot/assets/64636317/ab8799ca-2a08-4cdd-8320-2e3d15389d2a)
+![image](https://github.com/abhishekpandaOfficial/eAppleSpringBoot/assets/64636317/314fb3fc-8c31-46b8-a869-5f608d82f0f7)
 
-     •	Before Test execution: Start your required services (databases, messaging systems etc.) as Docker containers using the Testcontainers API. Once the required containers start, configure or update your application configuration to use these containerized services             and optionally initialize data needed for the test.
+    •	Before Test execution: Start your required services (databases, messaging systems etc.) as Docker containers using the Testcontainers API. Once the required containers start, configure or update your application configuration to use these containerized services             and optionally initialize data needed for the test.
     •	During Test execution: Your tests run using these containerized services.
     •	After Test execution: Testcontainers takes care of destroying containers irrespective of whether tests are executed successfully or there were any failures.
+
 
 
 
