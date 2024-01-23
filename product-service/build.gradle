@@ -2,6 +2,8 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.2.1'
 	id 'io.spring.dependency-management' version '1.1.4'
+//	id 'org.sonarqube' version '10.3.0'
+	id "org.sonarqube" version "4.4.1.3373"
 }
 
 group = 'com.morningmonk'
@@ -9,6 +11,15 @@ version = '0.0.1-SNAPSHOT'
 
 java {
 	sourceCompatibility = '17'
+}
+
+sonarqube {
+	properties {
+		property "sonar.projectKey", "product-service"
+		property "sonar.projectName", "product-service"
+		property "sonar.host.url", "http://localhost:9000"
+		property "sonar.login", "sqp_58756c8f64a593eb1dba415fc6632fa228bbae05"
+	}
 }
 
 configurations {
